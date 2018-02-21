@@ -1,0 +1,23 @@
+﻿@model IEnumerable<isaasi.Models.Category>
+
+
+
+<h4 class="align-content-center">Blog Kategorileri</h4>
+<hr />
+
+<ul class="metismenu" id="side-menu">
+    @foreach (var item in Model)
+    {
+
+
+        <li>
+            <a href="/Blog/List/@item.Id">@item.KategoriAdi</a>
+        </li>
+
+    }
+
+</ul>
+
+
+
+
